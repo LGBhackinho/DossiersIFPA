@@ -1,0 +1,50 @@
+CREATE TABLE `Utilisateur` (
+  `user_id` int,
+  `nom` string,
+  `prenom` string,
+  `genre` string,
+  `telephone` string,
+  `age` number,
+  `adresse` string,
+  `email` string,
+  `mot_de_passe` string,
+  `activite` string
+);
+
+CREATE TABLE `Recette` (
+  `id_recette` int
+);
+
+CREATE TABLE `Favoris` (
+  `id_user` string,
+  `id_recette` string
+);
+
+CREATE TABLE `Programme` (
+  `url_programme` string,
+  `date` date
+);
+
+CREATE TABLE `Macro nutrition` (
+  `user_id` string,
+  `date` date,
+  `Poid` number,
+  `Tx_graisse` number,
+  `Multiplicateur_act` number,
+  `Objectif_prise_masse` number,
+  `Objectif_seche` number,
+  `Poid_final` number,
+  `calorie_maintenance` Type,
+  `colorie_j` Type,
+  `glucide_j` Type,
+  `lipide_j` Type,
+  `proteine_j` Type,
+  `imc` Type
+);
+
+CREATE TABLE `token` (
+  `token` string,
+  `date_exp` date,
+  `user_id` int
+);
+
