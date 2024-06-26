@@ -1,15 +1,23 @@
-CREATE TABLE `Utilisateur` (
-  `user_id` int,
-  `nom` string,
-  `prenom` string,
-  `genre` string,
-  `telephone` string,
-  `age` number,
-  `adresse` string,
-  `email` string,
-  `mot_de_passe` string,
-  `activite` string
+
+CREATE DATABASE marienutrition;
+
+USE marienutrition;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    prenom VARCHAR(50),
+    nom VARCHAR(50),
+    age INT,
+    poids FLOAT,
+    adresse VARCHAR(100),
+    telephone VARCHAR(15),
+    email VARCHAR(50),
+    genre VARCHAR(10),
+    activite VARCHAR(50),
+    password VARCHAR(255)
 );
+
+
 
 CREATE TABLE `Recette` (
   `id_recette` int
